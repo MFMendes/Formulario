@@ -13,6 +13,9 @@
     --title-color: #071723;
     --normal: #2F3676;
     --hover: #191847;
+    --form-notification: #00C57C;
+    --error: #F59393;
+    --disabled: #C5CFD6;
 }
 
 body {
@@ -136,6 +139,12 @@ i {
     height: 120px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+}
+
+.form-footer p {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--form-notification);
 }
 
 .btn-send {
