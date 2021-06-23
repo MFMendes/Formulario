@@ -7,14 +7,22 @@
     font-family: 'Inter', sans-serif;;
 }
 
-body {
-    height: 100vh;
-    padding: 50px 0px;
-    display: flex;
-    justify-content: center;
-    background: #663399;
+:root {
+    /* ---===== Colors =====--- */
+    --background-color: #663399;
+    --title-color: #071723;
+    --normal: #2F3676;
+    --hover: #191847;
 }
 
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-color);
+}
+/*---===== CONTAINER =====---*/
 .container-edited {
     display: flex;
     flex-direction: column;
@@ -24,6 +32,7 @@ body {
     box-shadow: 10px 22px 24px rgba(0, 0, 0, 0.5);
 }  
 
+/*---===== HEADER =====---*/
 .form-header {
     position: relative;
 }
@@ -47,8 +56,9 @@ body {
     font-weight: 600;
 }
 
+/*---===== BODY =====---*/
 .form-body h5 {
-    color: #071723;
+    color: var(--title-color);
     font-weight: 600;
     font-size: 18px;
 }
@@ -56,16 +66,20 @@ body {
 .form-check-input {
     width: 30px;
     height: 30px;
-    background: #2F3676;
+    background: var(--normal);
 }
 
 .form-check-input:hover {
-    background: #191847;
+    background: var(--hover);
 }
 
 .formCheck label{
     font-size: 18px;
-    color: #071723;
+    color: var(--title-color);
+}
+
+.form-check-input:checked {
+    background: var(--normal);
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -85,11 +99,11 @@ input[type=number] {
 }
 
 .btn-minus, .btn-plus {
-    background: #2F3676;
+    background: var(--normal);
 }
 
 .btn-minus:hover , .btn-plus:hover {
-    background: #191847;
+    background: var(--hover);
 }
 
 i {
@@ -97,13 +111,13 @@ i {
 }
 
 .quantity {
-    border: 1px solid #2F3676;
+    border: 1px solid var(--normal);
     border-radius: 4px;
     width: 60px;
     height: 37px;
     font-weight: 600;
     text-align: center;
-    color: #071723;
+    color: var(--title-color);
     background: #DDE3E9;
 }
 
@@ -116,6 +130,7 @@ i {
     background: #DDE3E9;
 }
 
+/*---===== FOOTER =====---*/
 .form-footer {
     background: #DDE3E9;
     height: 120px;
@@ -124,14 +139,14 @@ i {
 }
 
 .btn-send {
-    background: #2F3676;
+    background: var(--normal);
     border-radius: 7px;
     padding: 5px 30px;
     color: #FFFFFF;
 }
 
 .btn-send:hover {
-    background: #191847;
+    background: var(--hover);
     color: #FFFFFF;
 }
 
