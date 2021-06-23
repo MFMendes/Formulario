@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Estilo CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Formulário</title>
+  </head>
+  <body>
+    
+    <div class="container-edited p-0">
+      <div class="form-header">
+          <img src="img/Background Shape 2.png" class="" alt="">
+        
+          <p>
+            Formulário<br>
+            para compra de<br>
+            <span>Pacote de Stickers</span>
+          </p>
+      </div>
+
+      <div class="form-body p-4">
+        <div>
+          <h5>Quais stickers?</h5>
+          <div class="formCheck">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label mt-2" for="flexCheckDefault">
+              React
+            </label>
+          </div>
+        
+          <div class="formCheck">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label mt-2" for="flexCheckChecked">
+              Vue
+            </label>
+          </div>
+
+          <div class="formCheck">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label mt-2" for="flexCheckChecked">
+              Angular
+            </label>
+          </div>
+        </div>
+          
+        <div class="mt-4">
+          <h5>Quantos stickers de cada?</h5>
+
+          <div class="d-flex justify-content-between align-items-center controls">
+            <div class="">
+              <button type="button" class="btn btn-minus">
+                <i class="fas fa-minus"></i>
+              </button>
+            </div>
+            
+            <div>
+              <input type="number" class="quantity" name="quantity" value="100">
+            </div>
+            
+            <div>
+              <button type="button" class="btn btn-plus">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <h5>Observações:</h5>
+          <textarea class="text-area" rows="3"></textarea>
+        </div>
+      </div>
+
+      <div class="form-footer d-flex justify-content-end align-items-center p-4">
+        <button type="button" class="btn btn-send">ENVIAR</button>
+      </div>
+    </div>
+    
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
