@@ -124,6 +124,11 @@ i {
     background: #DDE3E9;
 }
 
+.quantity.error {
+    border: 1px solid #F33232;
+    background: #F59393;
+}
+
 .text-area {
     border: 1px solid #2F3676;
     resize: none;
@@ -141,10 +146,15 @@ i {
     border-bottom-right-radius: 8px;
 }
 
-.form-footer p {
+.form-footer .message {
+    visibility: hidden;
     font-size: 18px;
     font-weight: 600;
     color: var(--form-notification);
+}
+
+.message.visible {
+    visibility: visible;
 }
 
 .btn-send {
