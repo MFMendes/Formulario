@@ -23,13 +23,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
     background: var(--background-color);
 }
 /*---===== CONTAINER =====---*/
 .container-edited {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     border-radius: 8px;
     background: #FFFFFF;
     box-shadow: 10px 22px 24px rgba(0, 0, 0, 0.5);
@@ -157,5 +157,9 @@ i {
 .btn-send:hover {
     background: var(--hover);
     color: #FFFFFF;
+}
+
+textarea {
+    color: var(--title-color);
 }
 
